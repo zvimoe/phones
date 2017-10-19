@@ -18,8 +18,7 @@
         }
          public function ALLquerybuilder($table){
 
-                return "SELECT * FROM $table INNER JOIN $table ON manafacturer $table.mana=manafacturer.code";
-           
+                return "SELECT * FROM $table";
             
         }
         
