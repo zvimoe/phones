@@ -1,6 +1,6 @@
 <?php
-   require_once "abstract-api.php";
-   require_once "../ctrl/phone-controller.php";
+    require_once "abstract-api.php";
+    require_once "../ctrl/phone-controller.php";
     require_once "../modul/phone-model.php";
   
     class PhoneApi extends API{
@@ -13,7 +13,7 @@
         }
         function select($params){
             
-            $m = new  PhoneModel($params['id'],"");
+            $m = new  PhoneModel($params['id'],"","");
             $mc = new  PhoneController;
             return $mc->select($m);
      

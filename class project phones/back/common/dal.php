@@ -36,7 +36,7 @@
                     
                         $stmt = $pdo->prepare($query);
                         $stmt->execute();
-                        return $stmt;
+                        return $stmt->fetchAll();
             }
                 
                 // add  or delete or update to the date base//

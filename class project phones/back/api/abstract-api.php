@@ -10,9 +10,9 @@ abstract class API{
             case 'POST':
             return $this->create($params);
             case 'GET':
-            return $this->select($params);
-    
-        }
+           $stmt= $this->select($params);
+           return json_encode($stmt);
+           }
     }
        
 
