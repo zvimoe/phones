@@ -14,9 +14,9 @@ function showPhones(){$.ajax({
         let arr=JSON.parse(data)
         for (let i=0; i<arr.length; i++) {
                 let t=phoneTamp;
-                t =t.replace("{{mana}}", arr[i].mana);
+                t =t.replace("{{mana}}", arr[i].name);
                 t =t.replace("{{model}}", arr[i].model);
-                t =t.replace("{{imgsrc}}", arr[i].imgsrc);
+                t =t.replace("{{imgsrc}}","../images/"+ arr[i].image);
                 t =t.replace("{{imgalt}}", arr[i].imgalt);
                 
                 let d = document.createElement('div');
